@@ -1,0 +1,138 @@
+
+.meniu{
+    padding-bottom: 90px;
+
+  }
+  nav ul {
+    list-style-type: none;
+     
+  }
+  
+  .meniu > li {
+    background: #f1c4e8;
+  }
+  
+  nav a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);    
+  }
+  nav ul, nav li {
+    margin:0;
+    padding:0;
+  }
+  nav > ul.meniu >li > ul.submeniu {
+    visibility: hidden;
+  }
+  nav>ul.meniu>li:hover>ul.submeniu{
+    visibility: visible;
+  }
+  nav>ul.meniu{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+  }
+  nav > ul.meniu >li{
+    flex-grow:1;
+    border:1px solid rgb(255, 253, 253);
+    text-align:center;
+    height:3rem;
+    line-height:3rem;
+  }
+  
+  nav ul.submeniu {
+  
+    border:1px solid rgb(255, 255, 255);
+    
+  }
+  nav ul.submeniu > li{
+    border:1px solid rgb(255, 255, 255);
+    background: #f1b5e5;
+  
+  
+  }
+  nav {
+    position: sticky;
+    top:0;
+  }
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 60px; 
+    color: #f5d0e9; 
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(201, 84, 152, 0.651); 
+    letter-spacing: 2px;     
+}
+
+header  {
+    text-align: center;
+    padding: 50px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content {
+    background-image: url('ProiectImagini/Fursecuri2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh; 
+}
+.content {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    padding: 20px; 
+}
+
+.container {
+    padding: 50px; 
+    background-color: #fff; 
+    border: 3px solid #e8acc6; 
+    border-radius: 50px; 
+    min-width: 300px; 
+    max-width: 400px; 
+    flex: 1 1 300px; 
+    box-sizing: border-box; 
+    font-size: 20px; 
+    text-align: center; 
+}
+
+
+
+.cart {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+  
+}
+
+
+.cart-icon {
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.CartImg {
+    width: 50px; 
+    height: 50px;
+}
+
+

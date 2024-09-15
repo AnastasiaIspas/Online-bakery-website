@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Anastasia's Cookies.">
+    <meta name="keywords" content="tari, calatorie, peisaje">
+    <meta name="author" content="Ispas Anastasia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anastasia's Cokkies</title>
+    
+   
+    <link rel="stylesheet" href="./PrajituriCSS.css" type="text/css">
+    <script src="./AnastasiasCookiesJAVA.js"></script>
+  </head>
+<body> 
+    <header class="header">
+        <div class="cart">
+            <a href="CartHTML.html" class="cart-icon">
+                <img src="ProiectImagini/CartIcon.jpg" alt="CartIcon" class="CartImg">
+            </a>
+        </div>
+    <h1>Prajituri</h1>
+
+</header>
+
+
+    <nav>
+    <ul class="meniu">
+        <li><a href="Cookies.html">Acasa</a></li>
+        <li><a href="FursecuriHTML.html">Fursecuri </a></li>
+        <li><a href="CafeaHTML.html">Cafea</a>
+            <ul class="submeniu">
+                <li><a href="CafeaHTML.html#CafeaRece">Cafea rece </a></li>
+                <li><a href="CafeaHTML.html#CafeaCalda">Cafea calda</a></li>
+            </ul>
+            </li>
+        <li><a href="PrajituriHTML.html">Prajituri</a>       
+
+
+    </ul>
+</nav>
+
+
+
+<section class="content">
+    <section class="prajituri-section">
+        <div class="container">
+            <div class="prajitura-card">
+                <img src="ProiectImagini/Prajitura1.jpg" alt="Cafea 1" class="prajitura-image">
+                <h3 class="prajitura-name"> Chocolate cake</h3>
+                <p class="prajitura-price">25 lei</p>
+                <button onclick="addToCart('Chocolate Cake', 25)" class="add-to-cart">Adaugă în coș</button>
+            </div>
+            <div class="prajitura-card">
+                <img src="ProiectImagini/Prajitura2.jpg" alt="Cafea 1" class="prajitura-image">
+                <h3 class="prajitura-name"> Starwberry Cake</h3>
+                <p class="prajitura-price">22 lei</p>
+                <button onclick="addToCart('Strawberry Cake', 22)" class="add-to-cart">Adaugă în coș</button>
+            </div>
+            <div class="prajitura-card">
+                <img src="ProiectImagini/Prajitura3.jpg" alt="Cafea 1" class="prajitura-image">
+                <h3 class="prajitura-name"> Maraschino Cherry Cake</h3>
+                <p class="prajitura-price">23 lei</p>
+                <button onclick="addToCart('Maraschino Cherry Cake', 23)" class="add-to-cart">Adaugă în coș</button>
+            </div>
+            <div class="prajitura-card">
+                <img src="ProiectImagini/Prajitura4.jpg" alt="Cafea 1" class="prajitura-image">
+                <h3 class="prajitura-name">Blueberry Cake</h3>
+                <p class="prajitura-price">20 lei</p>
+                <button onclick="addToCart('Blueberry Cake', 20)" class="add-to-cart">Adaugă în coș</button>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+</section>
+</body>
+</html>

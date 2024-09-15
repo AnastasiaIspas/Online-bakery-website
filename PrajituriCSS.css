@@ -1,0 +1,188 @@
+h1 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 60px; 
+    color: #f5d0e9; 
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(201, 84, 152, 0.651); 
+    letter-spacing: 2px;     
+}
+
+header  {
+    text-align: center;
+    padding: 50px;
+
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.meniu{
+    padding-bottom: 90px;
+
+  }
+  nav ul {
+    list-style-type: none;
+     
+  }
+  
+  .meniu > li {
+    background: #f1c4e8;
+  }
+  
+  nav a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);    
+  }
+  nav ul, nav li {
+    margin:0;
+    padding:0;
+  }
+  nav > ul.meniu >li > ul.submeniu {
+    visibility: hidden;
+  }
+  nav>ul.meniu>li:hover>ul.submeniu{
+    visibility: visible;
+  }
+  nav>ul.meniu{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+  }
+  nav > ul.meniu >li{
+    flex-grow:1;
+    border:1px solid rgb(255, 253, 253);
+    text-align:center;
+    height:3rem;
+    line-height:3rem;
+  }
+  
+  nav ul.submeniu {
+  
+    border:1px solid rgb(255, 255, 255);
+    
+  }
+  nav ul.submeniu > li{
+    border:1px solid rgb(255, 255, 255);
+    background: #f1b5e5;
+  
+  
+  }
+  nav {
+    position: sticky;
+    top:0;
+  }
+
+.prajituri-section {
+    display: flex;
+    justify-content: center; 
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+
+.container {
+    display: flex;
+    gap: 20px; 
+}
+
+.prajitura-card {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    background-color: #fff;
+    border-radius: 15px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(242, 144, 193, 0.801); 
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s; 
+}
+
+
+.prajitura-card:hover {
+    transform: scale(1.1); 
+}
+
+
+.prajitura-image {
+    width: 70%;
+    height: 60%;
+    border-radius: 50%;
+}
+
+
+.prajitura-name {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #a8709a;
+}
+
+
+.prajitura-price {
+    font-size: 16px;
+    color: #a8709a;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    background-color: #f4addd;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #fc87d7f1;
+}
+
+
+.cart {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+  
+}
+
+.cart-icon {
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.CartImg {
+    width: 50px; 
+    height: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Ajustează padding-ul */
+        flex-direction: column; /* Cardurile se așează pe verticală pe ecrane mai mici */
+    }
+}
+
+/* Ecrane mici (mobile) */
+@media (max-width: 480px) {
+    .prajitura-card {
+        width: 100%; /* Cardurile ocupă lățimea completă a containerului */
+    }
+}

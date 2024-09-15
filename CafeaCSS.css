@@ -1,0 +1,236 @@
+header  {
+    text-align: center;
+    padding: 50px;
+
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.meniu{
+    padding-bottom: 90px;
+
+  }
+  nav ul {
+    list-style-type: none;
+     
+  }
+  
+  .meniu > li {
+    background: #f1c4e8;
+  }
+  
+  nav a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);    
+  }
+  nav ul, nav li {
+    margin:0;
+    padding:0;
+  }
+  nav > ul.meniu >li > ul.submeniu {
+    visibility: hidden;
+  }
+  nav>ul.meniu>li:hover>ul.submeniu{
+    visibility: visible;
+  }
+  nav>ul.meniu{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+  }
+  nav > ul.meniu >li{
+    flex-grow:1;
+    border:1px solid rgb(255, 253, 253);
+    text-align:center;
+    height:3rem;
+    line-height:3rem;
+  }
+  
+  nav ul.submeniu {
+  
+    border:1px solid rgb(255, 255, 255);
+    
+  }
+  nav ul.submeniu > li{
+    border:1px solid rgb(255, 255, 255);
+    background: #f1b5e5;
+  
+  
+  }
+  nav {
+    position: sticky;
+    top:0;
+  }
+ 
+
+header  {
+    text-align: center;
+    padding: 50px;
+
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Layout-ul grilei de produse */
+/* Layout pentru grila de cafea */
+.coffee-grid {
+    display: flex;
+    justify-content: space-around; /* Distribuie produsele uniform */
+    flex-wrap: wrap; /* Permite trecerea pe rânduri dacă nu încap 4 pe o singură linie */
+    gap: 20px; /* Spațiere între iteme */
+    padding: 20px;
+}
+
+/* Stilurile pentru fiecare item de cafea */
+.coffee-item {
+    background-color: #fdf9fc;
+    border: 4px solid #f0aad1;
+    border-radius: 8px;
+    box-shadow: 6 4px 8px #f0aad1;
+    width: 250px; /* Dimensiune fixă pentru fiecare container */
+    height: 550px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Imaginea produsului */
+.coffee-image {
+    width: 100%;
+    height: 60%;
+    border-radius: 8px;
+}
+
+/* Numele produsului */
+.coffee-name {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #64044c;
+}
+
+/* Prețul produsului */
+.coffee-price {
+    font-size: 16px;
+    color: #64044c;
+    margin-bottom: 15px;
+}
+
+/* Butonul de adăugare în coș */
+.add-to-cart {
+    background-color: #f4addd;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #fc87d7f1;
+}
+
+
+.coffee-item:hover {
+    transform: translateY(-5px);
+}
+
+
+@media (max-width: 768px) {
+    .coffee-grid {
+        justify-content: center; 
+    }
+    .coffee-item {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .coffee-item {
+        width: 90%; 
+    }
+}
+h2{
+    color: #f1a5e1;
+    text-align: center;
+    
+}
+.Content {
+
+    background-image: url('ProiectImagini/CafeaFundal.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* min-height: 100vh;  */
+}
+
+h2 {
+
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 48px; 
+    color: #ffffff; 
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgb(242, 117, 211); 
+    letter-spacing: 2px; 
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 60px; 
+    color: #f5d0e9;
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(201, 84, 152, 0.651); 
+    letter-spacing: 2px; 
+}
+
+.ReceSauCalda{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 15px; 
+    color: #f7a2dc; 
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgb(210, 131, 177); 
+    letter-spacing: 2px; 
+}
+
+.cart {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+  
+}
+
+
+.cart-icon {
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.CartImg {
+    width: 50px; 
+    height: 50px;
+}

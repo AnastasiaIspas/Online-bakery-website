@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Anastasia's Cookies.">
+    <meta name="keywords" content="tari, calatorie, peisaje">
+    <meta name="author" content="Ispas Anastasia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anastasia's Cokkies</title>
+    
+   
+    <link rel="stylesheet" href="./CafeaCSS.css" type="text/css">
+    <script src="./AnastasiasCookiesJAVA.js"></script>
+  </head>
+<body> 
+    <header class="header">
+        <div class="cart">
+            <a href="CartHTML.html" class="cart-icon">
+                <img src="ProiectImagini/CartIcon.jpg" alt="CartIcon" class="CartImg">
+            </a>
+        </div>
+    <h1>Cafea</h1>
+    <div class="ReceSauCalda"> Rece sau calda!</div>
+
+</header>
+
+
+    <nav>
+    <ul class="meniu">
+        <li><a href="Cookies.html">Acasa</a></li>
+        <li><a href="FursecuriHTML.html">Fursecuri </a></li>
+        <li><a href="CafeaHTML.html">Cafea</a>
+            <ul class="submeniu">
+                <li><a href="#CafeaRece">Cafea rece </a></li>
+                <li><a href="#CafeaCalda">Cafea calda</a></li>
+            </ul>
+            </li>
+        <li><a href="PrajituriHTML.html">Prajituri</a>       
+        
+
+    </ul>
+</nav>
+<section class="Content">
+<section id="CafeaRece">
+<h2 class="CafeaSubtitlu">Cafea rece</h2>
+<section class="coffee-grid">
+    
+    <div class="coffee-item">
+        <img src="ProiectImagini/CafeaR1.jpg" alt="Cafea 1" class="coffee-image">
+        <h3 class="coffee-name">Coconut Vanilla Iced Coffee</h3>
+        <p class="coffee-price">20 lei</p>
+        <button onclick="addToCart('Coconut Vanilla Iced Coffee', 20)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    
+    <div class="coffee-item">
+        <img src="ProiectImagini/CafeaR2.jpg" alt="Cafea 2" class="coffee-image">
+        <h3 class="coffee-name">Iced Coffee</h3>
+        <p class="coffee-price"> 25 lei</p>
+        <button onclick="addToCart('Iced Coffee', 25)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    
+    <div class="coffee-item">
+        <img src="ProiectImagini/CafeaR3.jpg" alt="Cafea 3" class="coffee-image">
+        <h3 class="coffee-name">Cold Brew Coffee</h3>
+        <p class="coffee-price">22 lei</p>
+        <button onclick="addToCart('Cold Brew Coffee', 22)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    
+    <div class="coffee-item">
+        <img src="ProiectImagini/CafeaR4.jpg" alt="Cafea 4" class="coffee-image">
+        <h3 class="coffee-name">Caramel Macchiato</h3>
+        <p class="coffee-price">19 lei</p>
+        <button onclick="addToCart('Caramel Macchiato', 19)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    <div class="coffee-item">
+        <img src="ProiectImagini/CafeaR5.jpg" alt="Cafea 1" class="coffee-image">
+        <h3 class="coffee-name">Vegan Iced Mocha</h3>
+        <p class="coffee-price">24 lei</p>
+        <button onclick="addToCart('Vegan Iced Mocha', 20)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    
+    <div class="coffee-item">
+        <img src="ProiectImagini/CafeaR7.jpg" alt="Cafea 2" class="coffee-image">
+        <h3 class="coffee-name">Keo Iced Latte</h3>
+        <p class="coffee-price">20 lei</p>
+        <button onclick="addToCart('Keo Iced Latte', 20)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    
+    <div class="coffee-item">
+        <img src="ProiectImagini/CafeaR8.jpg" alt="Cafea 3" class="coffee-image">
+        <h3 class="coffee-name">Oreo Iced Latte</h3>
+        <p class="coffee-price">27 lei</p>
+        <button onclick="addToCart('Oreo Iced Latte', 27)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    
+    <div class="coffee-item">
+        <img src="ProiectImagini/CafeaR9.jpg" alt="Cafea 4" class="coffee-image">
+        <h3 class="coffee-name">Iced Brown Sugar Latte</h3>
+        <p class="coffee-price">25 lei</p>
+        <button onclick="addToCart('Iced Brown Sugar', 25)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    
+</section>
+</section>
+<section id="CafeaCalda">
+<h2 class="CafeaSubtitlu"> Cafea calda </h2>
+<section class="coffee-grid">
+    
+    <div class="coffee-item">
+        <img src="ProiectImagini/cafeaC1.jpg" alt="Cafea 1" class="coffee-image">
+        <h3 class="coffee-name">Cinnamon Dolce Latte</h3>
+        <p class="coffee-price">25 lei</p>
+        <button onclick="addToCart('Cinnamon Dolce Latte', 25)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    
+    <div class="coffee-item">
+        <img src="ProiectImagini/CafeaC2.jpg" alt="Cafea 2" class="coffee-image">
+        <h3 class="coffee-name">Dark Mocha</h3>
+        <p class="coffee-price">22 lei</p>
+        <button onclick="addToCart('Dark Mocha', 22)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    
+    <div class="coffee-item">
+        <img src="ProiectImagini/CafeaC3.jpg" alt="Cafea 3" class="coffee-image">
+        <h3 class="coffee-name">Salted Caramel Macchiato</h3>
+        <p class="coffee-price">21 lei</p>
+        <button onclick="addToCart('Salted Caramel Macchiato', 21)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    
+    <div class="coffee-item">
+        <img src="ProiectImagini/CafeaC4.jpg" alt="Cafea 4" class="coffee-image">
+        <h3 class="coffee-name">Pumpkin Spice Coffee</h3>
+        <p class="coffee-price">24 lei</p>
+        <button onclick="addToCart('Pumpkin Spice Coffee', 24)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    <div class="coffee-item">
+        <img src="ProiectImagini/CafeaC5.jpg" alt="Cafea 1" class="coffee-image">
+        <h3 class="coffee-name">Oatmilk Honey Latte</h3>
+        <p class="coffee-price">25 lei</p>
+        <button onclick="addToCart('Oatmilk Honey Latte', 25)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    
+    <div class="coffee-item">
+        <img src="ProiectImagini/CafeaC6.jpg" alt="Cafea 2" class="coffee-image">
+        <h3 class="coffee-name">Dirty Chai Latte</h3>
+        <p class="coffee-price">22 lei</p>
+        <button onclick="addToCart('CDirty Chai Latte', 22)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    
+    <div class="coffee-item">
+        <img src="ProiectImagini/CafeaC7.jpg" alt="Cafea 3" class="coffee-image">
+        <h3 class="coffee-name">Espresso</h3>
+        <p class="coffee-price">15 lei</p>
+        <button onclick="addToCart('Espresso', 15)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    
+    <div class="coffee-item">
+        <img src="ProiectImagini/CafeaC9.jpg" alt="Cafea 4" class="coffee-image">
+        <h3 class="coffee-name">Capuccino</h3>
+        <p class="coffee-price">18 lei</p>
+        <button onclick="addToCart('Capuccino', 18)" class="add-to-cart">Adaugă în coș</button>
+    </div>
+    
+</section>
+</section>
+</section>
+</body>
+
+</html>
