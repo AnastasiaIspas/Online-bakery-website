@@ -92,23 +92,22 @@ header  {
     }
 }
 
-/* Layout-ul grilei de produse */
-/* Layout pentru grila de cafea */
+
 .coffee-grid {
     display: flex;
-    justify-content: space-around; /* Distribuie produsele uniform */
-    flex-wrap: wrap; /* Permite trecerea pe rânduri dacă nu încap 4 pe o singură linie */
-    gap: 20px; /* Spațiere între iteme */
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; 
     padding: 20px;
 }
 
-/* Stilurile pentru fiecare item de cafea */
+
 .coffee-item {
     background-color: #fdf9fc;
     border: 4px solid #f0aad1;
     border-radius: 8px;
     box-shadow: 6 4px 8px #f0aad1;
-    width: 250px; /* Dimensiune fixă pentru fiecare container */
+    width: 250px; 
     height: 550px;
     padding: 20px;
     text-align: center;
@@ -122,21 +121,21 @@ header  {
     border-radius: 8px;
 }
 
-/* Numele produsului */
+
 .coffee-name {
     font-size: 18px;
     margin: 10px 0;
     color: #64044c;
 }
 
-/* Prețul produsului */
+
 .coffee-price {
     font-size: 16px;
     color: #64044c;
     margin-bottom: 15px;
 }
 
-/* Butonul de adăugare în coș */
+
 .add-to-cart {
     background-color: #f4addd;
     color: white;
