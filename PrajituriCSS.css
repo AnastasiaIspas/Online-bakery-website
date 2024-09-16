@@ -175,14 +175,14 @@ header  {
 
 @media (max-width: 768px) {
     .container {
-        padding: 10px; /* Ajustează padding-ul */
-        flex-direction: column; /* Cardurile se așează pe verticală pe ecrane mai mici */
+        padding: 10px; 
+        flex-direction: column; 
     }
 }
 
-/* Ecrane mici (mobile) */
+
 @media (max-width: 480px) {
     .prajitura-card {
-        width: 100%; /* Cardurile ocupă lățimea completă a containerului */
+        width: 100%; 
     }
 }
